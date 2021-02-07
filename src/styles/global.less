@@ -1,0 +1,49 @@
+@import "./variables.less";
+
+html,
+body,
+#app {
+  margin: 0;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+svg {
+  g,
+  path {
+    fill: inherit !important;
+  }
+}
+
+.requestError {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: @red-6;
+  }
+  .ant-notification-notice-message {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .ant-notification-notice-description {
+    font-size: 12px;
+  }
+}
